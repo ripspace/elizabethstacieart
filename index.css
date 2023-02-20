@@ -1,0 +1,144 @@
+html, body
+{
+    margin:0px; 
+    padding:0px;
+}
+body
+{
+    background-color:white;
+    background-attachment:fixed;
+    background-position:0px 40px;
+    background-repeat:none;
+    height:100%;
+}
+img
+{
+    height: 256px;
+}
+#loadButton
+{
+    background-color: rgb(200,24,24); 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.line
+{
+    width: 75%;
+    height: 10px;
+    background-color: blue;
+    display: inline-block;
+}
+.maintable
+{
+    width:1000px;
+    border: 2px solid rgb(228,228,228);
+    padding-top: 50px;
+    padding-bottom:50px;
+    background-color:white;
+}
+.cont_prop
+{
+    text-align: right;
+}
+table.maintable tr, table.maintable tr td
+{
+    text-align:center;
+}
+table.maintable tr
+{
+    border: solid;
+    border-width: 1px 0;
+}
+table.maintable tr 
+{
+    padding:100px;
+}
+h1
+{
+    text-shadow: 2px 2px 2px rgba(64,64,64,1);
+    font-weight: normal;
+    color: #000000;
+    font-size: 48px;
+    font-family: lucida sans unicode, lucida grande, sans-serif;
+    line-height: 1;
+}
+h2, h3
+{
+    font-family: "arial";
+    font-size: 15px;
+    line-height: 1.8em;
+    text-transform: uppercase;
+    text-decoration:none;
+    letter-spacing:3px;
+    
+    font-weight:400;
+    font-style:normal;
+}
+h2
+{
+    color:rgba(0,15,15,.3);
+}
+h3
+{
+    color:black;
+}
+.top_border
+{
+    z-index: 1;
+    height:40px;
+    width:100%;
+    background-color: black; 
+    position:fixed;
+}
+.white_background
+{
+    width:1400px;
+    height:100%;
+    background:url("./background.jpg");
+    z-index:-1;
+    position:fixed;
+    left:50%;
+    margin-left:-700px;
+    border:2px solid rgb(114,114,114);
+}
+
+nav, ul
+{
+    display:inline-block;
+    line-height:1.8em;
+    list-style:none;
+}
+
+nav
+{
+    overflow: hidden;
+    float: left;
+    width: 100%;
+}
+
+nav a
+{
+    float: left;
+    color: #242424;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    font-family:arial;
+    font-size: 28px;
+    text-transform: none;
+    font-weight: 400;
+    font-style: normal;
+    list-style-type: none;
+}
+
+p
+{
+    font-family: "Times New Roman", Times, serif;
+    color: #eb6d20;
+    font-size:80px;
+}

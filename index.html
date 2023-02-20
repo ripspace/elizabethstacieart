@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>
+            Elizabeth Stacie Art</title>
+        
+    </head>
+    <body>
+    <center>
+    <div class="top_border"></div>
+    <div class="white_background"></div>
+    <div style="height:120px"></div>
+
+        <table class="maintable">
+            <tr>
+            <td colspan="2">
+            <h1>
+                Elizabeth Stacie Art</h1>
+            <h2>
+                Exotic Glass Art and Jewelry with a Tropical Vibe.</br>
+                Made on the Water, Sold on the Island.</h2>
+            <nav>
+                <ul>
+                    <a href="./index.html"><li>Home</li></a>
+                    <a href="./events.html"><li>Events</li></a>
+                    <a href="https://www.etsy.com/shop/elizabethstacieart?ref=shop_sugg"><li>Store</li></a>
+                    <a href="https://www.instagram.com/elizabethstacieart/"><li>Instagram</li></a>
+                    <a href="#contact"><li>Contact</li></a>
+                </ul>
+            </nav>
+            <img src="main.jpg" style="height:512px;"></img>
+            <h3>
+                Elizabeth Stacie creates exotic glass art using recycled glass,
+                metals, and other materials to create her one-of-a-kind pieces.
+                </h3>
+            <img src="second.jpg" style="height:512px;"></img>
+            <h3>
+                Elizabeth Stacie can be found at high end art shows, specialty 
+                botiques, and private showings throughout Southern California 
+                and the Hawaiian islands.</h3>
+            </td>
+            </tr>
+            <tr>
+            <td colspan="2">
+            
+            <h1>
+                I am also online at:</h1>
+            <a style="text-decoration:none;" href="https://www.etsy.com/shop/elizabethstacieart">
+            <p id=".storefont">
+                Etsy!</p></a>
+            <h3>
+                and</h3>
+            <a href="https://www.instagram.com/elizabethstacieart/"><img src="./instagram-icon.png" style="padding:50px;"></a>
+            <h3>
+                
+                Uploading Daily <a 
+                style="text-decoration: none;" 
+                href="https://www.instagram.com/elizabethstacieart/">
+                @elizabethstacieart</a></h3>
+            </br>
+            <div id="instafeed"></div>
+            </br>
+            <button id="loadButton">Load More Images</button>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+            <script type="text/javascript">
+              var userfeed = new Instafeed({
+                after: function() 
+                {
+                    if (!this.hasNext())
+                    {
+                        loadButton.setAttribute('disabled', 'disabled');
+                    }
+                },
+                get: 'user',
+                userId: 'self',
+                clientId: 'a5a40207d895421b99aea3a25a3934e4',
+                accessToken: '3037159091.a5a4020.a736315ca2e24df099b9af90fe6ae66e',
+                resolution: 'standard_resolution',
+                template: '<a href="{{link}}" target="_blank" id="{{id}}"><img style="width:256px;height:256px;" src="{{image}}" /></a>',
+                filter: function(image) {
+                    return image.tags.indexOf('online') >= 0;
+                },
+                sortBy: 'most-recent',
+                limit: 9
+            });
+            loadButton.addEventListener('click', function()
+            {
+                userfeed.next();
+            });
+            userfeed.run();
+            </script>
+            </td>
+            </tr>
+            <tr>
+            <td style="width:50%; padding-top:10px;">
+            <a name="contact"></a><img src="stacie.jpg" style="height: auto; width: 75%; object-fit: contain">
+            </td>
+            <td style="width:50%">
+            <table>
+						<tbody><tr>
+							<td class="cont_prop">Contact:</td>
+							<td>Elizabeth Stacie Plunkett</td>
+						</tr>
+						<tr>
+							<td class="cont_prop">Email:</td>
+							<td>elizabethstacieart@gmail.com</td>
+						</tr>
+						<tr>
+							<td class="cont_prop">Phone:</td>
+							<td>714 336 2819</br>808 589 6139</td>
+						</tr>
+					</tbody></table>
+            </td>
+            </tr>
+        </table>
+    <h5>(C) 2016 Elizabeth Stacie Art. All Rights Reserved</h5>
+    </center>
+    </body>
+</html>
