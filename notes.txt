@@ -11,3 +11,6 @@ amazing world of colors and textures perfect for Elizabeth to
 create her one of a kind Exotic Glass Jewelry
 
 https://www.etsy.com/shop/elizabethstacieart?ref=shop_sugg
+
+Learn how php and html works on a webserver.
+Learn about doctype.
