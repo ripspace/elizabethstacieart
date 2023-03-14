@@ -14,3 +14,8 @@ https://www.etsy.com/shop/elizabethstacieart?ref=shop_sugg
 
 Learn how php and html works on a webserver.
 Learn about doctype.
+
+# Todos
+Create Upload Page for posting uploads
+Change background image
+Change Page styles
